@@ -140,7 +140,7 @@ func _test_rules_contents() -> void:
 	var rules: Control = shell.screen("rules")
 	_check(not _find_label_text(rules, "6 个宇宙").is_empty(), "规则页写明一局最多 6 个宇宙")
 	_check(not _find_label_text(rules, "8%").is_empty(), "规则页写明权重低于 8% 不能分裂")
-	_check(not _find_label_text(rules, "幻影").is_empty(), "规则页解释幻影子")
+	_check(not _find_label_text(rules, "虚子").is_empty(), "规则页解释虚子")
 	_check(not _find_label_text(rules, "坍缩").is_empty(), "规则页解释坍缩")
 
 

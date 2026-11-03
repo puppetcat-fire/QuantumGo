@@ -27,7 +27,7 @@ const LEADERBOARD_SCORE := "TOTAL_WEIGHTED_SCORE"
 ## achievements screen and by the docs/SHIPPING.md checklist.
 const ACHIEVEMENTS := {
 	ACHIEVEMENT_FIRST_QUANTUM: "第一次量子步：把棋盘分裂成两个宇宙",
-	ACHIEVEMENT_FIRST_COLLAPSE: "第一次观测：提掉幻影子，坍缩一个分支",
+	ACHIEVEMENT_FIRST_COLLAPSE: "第一次观测：提掉虚子，坍缩一个分支",
 	ACHIEVEMENT_WIN_FIRST: "首胜：赢下第一局（单机或联机）",
 }
 

@@ -30,6 +30,16 @@
 完整规则在 [`docs/RULES.md`](docs/RULES.md)，架构与接口契约在
 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)。
 
+## 界面
+
+| | |
+|:--:|:--:|
+| ![主菜单](docs/screenshots/menu.png)<br>主菜单：一手棋，两个宇宙 | ![量子步待选](docs/screenshots/quantum_pending.png)<br>量子步：A 点已落下，紫色是 B 点候选 |
+| ![两个宇宙](docs/screenshots/match_two.png)<br>分裂后的两个宇宙，各 50% | ![19 路三宇宙](docs/screenshots/board19.png)<br>19 路棋盘 + 3 个宇宙的聚焦布局 |
+| ![教程](docs/screenshots/tutorial_split.png)<br>五步互动教程（这一课会揭开虚子） | ![规则](docs/screenshots/rules.png)<br>内置规则页，两分钟读完 |
+| ![排行榜](docs/screenshots/leaderboard.png)<br>排行榜：本地 Elo、战绩、最近对局 | ![结算](docs/screenshots/result_six.png)<br>结算面板：各宇宙加权目数 |
+| ![联机大厅](docs/screenshots/lobby.png)<br>联机大厅：房主 / 加入 | ![复盘](docs/screenshots/replay.png)<br>复盘：虚子与它对应的实子 |
+
 ## 运行
 
 需要 **Godot 4.6.x 标准版**（不需要 .NET）。

@@ -29,13 +29,13 @@ const STEPS := [
 		"hint": "落下之后，你会看到两个棋盘并排出现。",
 	},
 	{
-		"title": "提掉幻影子，假宇宙消失",
-		"body": "量子步之后，两个宇宙里各有一颗子是「虚」的——它可能根本不存在，但正常对局里谁也看不出是哪一颗。这盘棋你赢在知道它可能假，而不是知道哪个假。\n\n接下来这一课我替你揭开：带紫色虚线的那颗就是本局的幻影子。\n\n堵住它最后一口气，就等于完成一次「观测」。",
-		"hint": "在带紫色虚线的棋盘上，点幻影子下面那个空交叉点。",
+		"title": "提掉虚子，假宇宙消失",
+		"body": "量子步之后，两个宇宙里各有一颗子是「虚」的——它可能根本不存在，但正常对局里谁也看不出是哪一颗。这盘棋你赢在知道它可能假，而不是知道哪个假。\n\n接下来这一课我替你揭开：带紫色虚线的那颗就是本局的虚子。\n\n堵住它最后一口气，就等于完成一次「观测」。",
+		"hint": "在带紫色虚线的棋盘上，点虚子下面那个空交叉点。",
 	},
 	{
 		"title": "坍缩之后按权重算分",
-		"body": "幻影子被提走，那个宇宙被证明是假的，连同它的 50% 一起消失，可能性回到另一个宇宙——棋盘又回到一个确定的世界。\n\n正常对局里，虚子在你提掉它之前一直看不出来；对局结束后可以复盘，那时候才看得到当时哪颗是虚的。",
+		"body": "虚子被提走，那个宇宙被证明是假的，连同它的 50% 一起消失，可能性回到另一个宇宙——棋盘又回到一个确定的世界。\n\n正常对局里，虚子在你提掉它之前一直看不出来；对局结束后可以复盘，那时候才看得到当时哪颗是虚的。",
 		"hint": "这就是全部规则。祝你下得开心。",
 	},
 ]
@@ -282,14 +282,14 @@ func _handle_quantum_click(universe_id: int, index: int) -> void:
 func _handle_collapse_click(universe_id: int, index: int) -> void:
 	var result := _game.apply_move(universe_id, index, QGTypes.WHITE)
 	if not result["ok"]:
-		_hint_label.text = "这个点不能落子，找幻影子旁边那个空交叉点。"
+		_hint_label.text = "这个点不能落子，找虚子旁边那个空交叉点。"
 		return
 	_play_stone(QGTypes.WHITE)
 	if not Array(result["collapsed"]).is_empty():
 		_play_collapse()
 		_go_to_step(4)
 	else:
-		_hint_label.text = "提子成功了，但没有提到幻影子。点幻影子旁边那个空交叉点，才能完成观测。"
+		_hint_label.text = "提子成功了，但没有提到虚子。点虚子旁边那个空交叉点，才能完成观测。"
 
 
 func _can_click(universe_id: int) -> bool:

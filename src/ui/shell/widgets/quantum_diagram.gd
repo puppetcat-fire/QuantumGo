@@ -78,10 +78,10 @@ func _draw() -> void:
 	draw_string(font, Vector2(left_centre.x - label_width * 0.5, centre.y - radius - 16.0),
 		tr("实子"), HORIZONTAL_ALIGNMENT_CENTER, label_width, font_size, Color(ACCENT_A, 0.9))
 	draw_string(font, Vector2(right_centre.x - label_width * 0.5, centre.y - radius - 16.0),
-		tr("幻影子"), HORIZONTAL_ALIGNMENT_CENTER, label_width, font_size, Color(ACCENT_B, 0.95))
+		tr("虚子"), HORIZONTAL_ALIGNMENT_CENTER, label_width, font_size, Color(ACCENT_B, 0.95))
 
 	draw_string(font, Vector2(0.0, centre.y + radius + font_size * 2.0 + 40.0),
-		tr("一次量子落子 → 两个宇宙；幻影被提 → 该宇宙坍缩"),
+		tr("一次量子落子 → 两个宇宙；虚子被提 → 该宇宙坍缩"),
 		HORIZONTAL_ALIGNMENT_CENTER, size.x, font_size, Color(QGPalette.TEXT_DIM, 0.95))
 
 
