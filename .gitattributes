@@ -1,0 +1,12 @@
+# Keep text files LF in the repository; Windows checkouts may still use CRLF.
+* text=auto eol=lf
+
+# Binary assets must never be normalised.
+*.png binary
+*.ico binary
+*.wav binary
+*.otf binary
+*.ttf binary
+*.docx binary
+*.exe binary
+*.pck binary

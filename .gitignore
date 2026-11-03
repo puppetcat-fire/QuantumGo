@@ -1,52 +1,24 @@
-# Prerequisites
-*.d
+# Godot
+.godot/
+*.translation
+export_presets.cfg.bak
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Build output
+build/
+export/
+*.pck
+*.log
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Local scratch (screenshots, probes, temp packs)
+tmp/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Bundled editor runtime — downloaded separately, ~164 MB
+tools/godot/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
+# Compiled binaries, except the original prototype's
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+!prototype/main.exe
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# OS / editor noise
+.DS_Store
+Thumbs.db

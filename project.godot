@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Quantum Go"
+config/description="A quantum variant of Go: every quantum move branches reality into weighted universes that collapse when observed."
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/version="1.0.0"
+config/icon="res://assets/icon.png"
+run/main_scene="res://src/ui/shell/main.tscn"
+
+[autoload]
+
+L="*res://src/game/qg_locale.gd"
+Settings="*res://src/game/qg_settings.gd"
+Leaderboard="*res://src/game/qg_leaderboard.gd"
+Platform="*res://src/game/qg_platform.gd"
+Sfx="*res://src/ui/qg_sfx.gd"
+Session="*res://src/game/qg_session.gd"
+
+[display]
+
+window/size/viewport_width=1440
+window/size/viewport_height=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+
+[physics]
+
+common/enable_pause_aware_picking=true
